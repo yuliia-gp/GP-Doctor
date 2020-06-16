@@ -12,7 +12,7 @@ import cucumber.api.junit.Cucumber;			// for cucumber 4.3 version
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		features="src/test/resources/features"
-		,glue="com/GeniusDocter/steps"	
+		,glue="com/GeniusDoctor/steps"	
 		,dryRun = false
 		,plugin= {"pretty" 
 				, "html:target/html/cucumber-default-report"
@@ -20,7 +20,7 @@ import cucumber.api.junit.Cucumber;			// for cucumber 4.3 version
 				, "junit:target/cucumber.xml"
 				, "rerun:target/failed.txt"}
 		,monochrome=true 
-				
+			
 		)
 
 public class RunnerClass {

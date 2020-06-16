@@ -1,4 +1,4 @@
-package com.GeniusDocter.steps;
+package com.GeniusDoctor.steps;
 
 
 import com.GeniusDoctor.utils.CommonMethods;

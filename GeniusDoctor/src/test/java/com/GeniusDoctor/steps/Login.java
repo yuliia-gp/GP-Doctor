@@ -1,4 +1,4 @@
-package com.GeniusDocter.steps;
+package com.GeniusDoctor.steps;
 
 import org.openqa.selenium.By;
 
@@ -19,7 +19,8 @@ public class Login extends CommonMethods{
 
 	@When("User signs in")
 	public void user_signs_in() {
-		driver.findElement(By.xpath("//*[@id='root']/div[1]/div/ul/li[5]/button")).click();
+		
+		driver.findElement(By.xpath("//*[@id=\"root\"]/div[1]/nav/div[1]/div[2]/button")).click();
 		signUp.firstname.sendKeys("Yuliia");
 		signUp.lastName.sendKeys("Hudzenko");
 		signUp.email.sendKeys("yuliia3@geniusplaza.com");
@@ -45,8 +46,8 @@ public class Login extends CommonMethods{
 
 	@When("User is logs in")
 	public void user_is_logs_in() {
-	  driver.findElement(By.xpath("//*[@id='root']/div[1]/div/ul/li[4]/button")).click();
-	  signUp.emailLogIn.sendKeys("yuliia@geniusplaza.com");
+	  driver.findElement(By.xpath("//*[@id=\"root\"]/div[1]/nav/div[1]/div[2]/button")).click();
+	  signUp.emailLogIn.sendKeys("yhudzenko1166@gmail.com");
 	  signUp.passwordLogIn.sendKeys("123123");
 	  signUp.loginBtn.click();
 	}

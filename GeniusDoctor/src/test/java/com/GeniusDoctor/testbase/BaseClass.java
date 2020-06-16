@@ -6,6 +6,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.safari.SafariDriver;
 
 import com.GeniusDoctor.utils.ConfigsReader;
 import com.GeniusDoctor.utils.Constants;
@@ -26,6 +27,9 @@ public class BaseClass {
 		case "firefox" : 
 			System.setProperty("webdriver.gecko.driver", Constants.GECKO_DRIVER_PATH);
 			driver = new FirefoxDriver();
+			break;
+		case "Safari" :
+			driver  = new SafariDriver();
 			break;
 		default : 
 			System.err.println("Browser is not supported");
